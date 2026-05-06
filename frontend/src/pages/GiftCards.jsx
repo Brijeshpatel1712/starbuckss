@@ -33,22 +33,20 @@ const GiftCards = () => {
         <div className="bg-white min-h-screen flex flex-col">
             <Header />
             <main className="flex-1 w-full">
-                <section className="max-w-[1440px] mx-auto px-8 py-12">
-                    <h1 className="text-[28px] font-bold text-gray-900 mb-8">Gift cards</h1>
+                <section className="max-w-[1440px] mx-auto px-4 md:px-8 py-8 md:py-12">
+                    <h1 className="text-2xl md:text-[28px] font-bold text-gray-900 mb-6 md:mb-8">Gift cards</h1>
 
                     <CarouselSection title="FEATURED" cards={featuredCards} />
 
                     {/* Info Banner */}
-                    <div className="bg-[#f2f0eb] p-6 flex items-center gap-6 rounded-lg shadow-sm mb-12">
+                    <div className="bg-[#f2f0eb] p-4 md:p-6 flex flex-col md:flex-row items-center gap-4 md:gap-6 rounded-lg shadow-sm mb-12 text-center md:text-left">
                         <div className="w-16 h-10 flex-shrink-0 relative">
-                            <img src="https://www.starbucks.com/weblx/images/gift/bulk-gift-cards.jpg" alt="" className="w-full h-full object-cover rounded shadow-sm hidden" onError={(e) => e.target.style.display = 'none'} />
-                            {/* Fallback icon if image fails or not available */}
                             <div className="w-full h-full bg-white rounded shadow-sm flex items-center justify-center border border-gray-100">
                                 <StarbucksLogo className="w-6 h-6" />
                             </div>
                         </div>
                         <div className="flex-1">
-                            <p className="text-[14px] font-semibold text-gray-800">
+                            <p className="text-sm font-semibold text-gray-800">
                                 Effortlessly send up to 10 eGifts per purchase. Select a design to start!
                             </p>
                         </div>
@@ -60,23 +58,23 @@ const GiftCards = () => {
 
                 </section>
 
-                <section className="bg-[#e9f2ef] py-10">
-                    <div className="max-w-[1440px] mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="flex flex-col md:flex-row items-center gap-6 w-full md:w-auto">
-                            <h2 className="text-[20px] md:text-[24px] font-bold text-gray-900 whitespace-nowrap">Received a gift card?</h2>
-                            <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-                                <span className="text-gray-500 text-[14px] font-medium whitespace-nowrap">Earns 2<span className="text-[#cba258]">★</span> per $1</span>
-                                <div className="flex gap-4 w-full md:w-auto">
-                                    <button className="rounded-full px-4 py-1.5 border border-gray-900 font-semibold text-sm hover:bg-gray-100 transition-colors whitespace-nowrap">
+                <section className="bg-[#e9f2ef] py-8 md:py-10">
+                    <div className="max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full md:w-auto text-center md:text-left">
+                            <h2 className="text-[20px] md:text-[24px] font-bold text-gray-900">Received a gift card?</h2>
+                            <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 w-full md:w-auto">
+                                <span className="text-gray-500 text-[14px] font-medium">Earns 2<span className="text-[#cba258]">★</span> per $1</span>
+                                <div className="flex flex-wrap justify-center gap-3 md:gap-4 w-full md:w-auto">
+                                    <button className="rounded-full px-4 py-1.5 border border-gray-900 font-semibold text-sm hover:bg-gray-100 transition-colors">
                                         Add or Reload
                                     </button>
-                                    <button className="rounded-full px-4 py-1.5 bg-black text-white font-semibold text-sm hover:bg-gray-800 transition-colors whitespace-nowrap">
+                                    <button className="rounded-full px-4 py-1.5 bg-black text-white font-semibold text-sm hover:bg-gray-800 transition-colors">
                                         Check balance
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:w-auto flex justify-end">
+                        <div className="w-full md:w-auto flex justify-center md:justify-end">
                             <a href="#" className="flex items-center gap-1 text-[#008248] text-sm font-semibold hover:underline">
                                 Card Terms & Conditions
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

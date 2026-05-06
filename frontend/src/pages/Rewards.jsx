@@ -62,88 +62,87 @@ const Rewards = () => {
         <>
             <Header />
             <div className="w-full bg-[#d4e9e2] bg-opacity-30">
-                <div className="flex flex-col md:flex-row w-full min-h-[400px]">
-                    <div className="flex-1 flex flex-col justify-center items-start px-8 py-12 md:pl-20 md:pr-10">
-                        <h2 className="text-[26px] md:text-[36px] font-bold text-[#1e3932] mb-4 leading-tight">
-                            It’s a great day for <br /> free coffee
+                <div className="flex flex-col md:flex-row w-full min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                    <div className="flex-1 flex flex-col justify-center items-start px-6 sm:px-10 md:px-12 lg:px-20 py-10 sm:py-16 md:py-12">
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-bold text-[#1e3932] mb-4 leading-tight">
+                            It’s a great day for <br className="hidden sm:block" /> free coffee
                         </h2>
-                        <p className="text-[19px] text-[#1e3932] mb-8 font-medium">
+                        <p className="text-[16px] sm:text-[18px] md:text-[19px] lg:text-[22px] text-[#1e3932] mb-8 font-medium">
                             Sign up and start enjoying the perks of Starbucks® Rewards.
                         </p>
                         <a
                             href="/account/create"
-                            className="inline-block bg-[#008248] text-white font-bold rounded-full px-6 py-2 hover:bg-[#006236] transition-colors mb-6 text-base"
+                            className="inline-block bg-[#008248] text-white font-bold rounded-full px-6 sm:px-8 py-2 md:py-2.5 hover:bg-[#006236] transition-colors mb-6 text-sm sm:text-base"
                         >
                             Join now
                         </a>
-                        <div className="text-[16px] font-semibold">
+                        <div className="text-[14px] sm:text-[16px] font-semibold">
                             <span className="text-[#1e3932]">It's even better</span>
                             <a href="#" className="underline ml-1 hover:no-underline text-[#1e3932]">
                                 with the app.
                             </a>
                         </div>
                     </div>
-                    <div className="flex-1 relative overflow-hidden">
+                    <div className="flex-1 relative overflow-hidden min-h-[250px] sm:min-h-[350px] md:min-h-0">
                         <img
                             src={rewardsHero}
                             alt="Starbucks Rewards"
-                            className="w-full h-full object-cover object-right"
+                            className="w-full h-full object-cover object-center md:object-right"
                         />
                     </div>
                 </div>
             </div>
 
-            <div className="py-20 bg-white">
-                <div className="max-w-[1440px] mx-auto px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-[28px] font-bold text-gray-900 mb-4">Getting started is easy</h2>
-                        <p className="text-[16px] text-gray-600">Earn Stars and get rewarded in a few easy steps.</p>
+            <div className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+                <div className="max-w-[1440px] mx-auto px-6 sm:px-8">
+                    <div className="text-center mb-10 sm:mb-16">
+                        <h2 className="text-[22px] sm:text-[26px] md:text-[28px] lg:text-[32px] font-bold text-gray-900 mb-4">Getting started is easy</h2>
+                        <p className="text-[14px] sm:text-[16px] text-gray-600">Earn Stars and get rewarded in a few easy steps.</p>
                     </div>
 
-                    <div className="flex flex-col md:flex-row gap-8 justify-center items-start text-center">
+                    <div className="flex flex-col md:flex-row gap-10 md:gap-8 justify-center items-start text-center">
                         <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-12 h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-xl font-bold mx-auto mb-6">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-lg sm:text-xl font-bold mx-auto mb-6">
                                 1
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Create an account</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed">
+                            <h3 className="text-[17px] sm:text-[19px] font-bold text-gray-900 mb-4">Create an account</h3>
+                            <p className="text-[14px] sm:text-[16px] text-gray-600 leading-relaxed">
                                 To get started, <a href="#" className="text-[#008248] underline hover:no-underline">join now</a>. You can also <a href="#" className="text-[#008248] underline hover:no-underline">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.
                             </p>
                         </div>
 
                         <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-12 h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-xl font-bold mx-auto mb-6">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-lg sm:text-xl font-bold mx-auto mb-6">
                                 2
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Order and pay how you’d like</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed">
+                            <h3 className="text-[17px] sm:text-[19px] font-bold text-gray-900 mb-4">Order and pay how you’d like</h3>
+                            <p className="text-[14px] sm:text-[16px] text-gray-600 leading-relaxed">
                                 Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#" className="text-[#008248] underline hover:no-underline">Learn how</a>
                             </p>
                         </div>
 
                         <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-12 h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-xl font-bold mx-auto mb-6">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#008248] flex items-center justify-center text-[#008248] text-lg sm:text-xl font-bold mx-auto mb-6">
                                 3
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Earn Stars, get Rewards</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed">
+                            <h3 className="text-[17px] sm:text-[19px] font-bold text-gray-900 mb-4">Earn Stars, get Rewards</h3>
+                            <p className="text-[14px] sm:text-[16px] text-gray-600 leading-relaxed">
                                 As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+             <div className="bg-[#f1f8f6] py-12 md:py-16">
+                <div className="text-center mb-8 md:mb-12 px-4">
+                    <h2 className="text-[22px] md:text-[28px] font-bold text-gray-900 mb-6 md:mb-8">Get your favorites for free</h2>
 
-            <div className="bg-[#f1f8f6] py-16">
-                <div className="text-center mb-12">
-                    <h2 className="text-[28px] font-bold text-gray-900 mb-8">Get your favorites for free</h2>
-
-                    <div className="flex justify-center gap-8 md:gap-12 mb-8">
+                    <div className="flex justify-start md:justify-center gap-6 md:gap-12 mb-8 overflow-x-auto scrollbar-hide px-4">
                         {favoritesTabs.map((tab) => (
                             <button
                                 key={tab.stars}
                                 onClick={() => setActiveTab(tab.stars)}
-                                className={`text-[19px] md:text-[24px] font-bold pb-2 transition-all relative ${activeTab === tab.stars
+                                className={`text-[19px] md:text-[24px] font-bold pb-2 transition-all relative whitespace-nowrap ${activeTab === tab.stars
                                     ? 'text-gray-900'
                                     : 'text-gray-900 opacity-60 hover:opacity-100'
                                     }`}
@@ -157,18 +156,18 @@ const Rewards = () => {
                     </div>
                 </div>
 
-                <div className="bg-[#d4e9e2] bg-opacity-30 py-12">
-                    <div className="max-w-[1440px] mx-auto px-8 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32">
-                        <div className="w-full md:w-1/3 max-w-[375px]">
+                <div className="bg-[#d4e9e2] bg-opacity-30 py-8 md:py-12">
+                    <div className="max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-32">
+                        <div className="w-full md:w-1/3 max-w-[300px] md:max-w-[375px]">
                             <img
                                 src={activeContent.image}
                                 alt={`${activeContent.stars} Stars Reward`}
                                 className="w-full h-auto object-contain"
                             />
                         </div>
-                        <div className="text-center md:text-left md:w-1/3">
-                            <h3 className="text-[24px] font-bold text-gray-900 mb-4">{activeContent.title}</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed max-w-[400px]">
+                        <div className="text-center md:text-left md:w-1/3 px-4">
+                            <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900 mb-4">{activeContent.title}</h3>
+                            <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed max-w-[400px] mx-auto md:mx-0">
                                 {activeContent.description}
                             </p>
                         </div>
@@ -176,44 +175,44 @@ const Rewards = () => {
                 </div>
             </div>
 
-            <div className="py-20 bg-white">
-                <div className="max-w-[1440px] mx-auto px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-[28px] font-bold text-gray-900 mb-4">Endless Extras</h2>
-                        <p className="text-[16px] text-gray-600 max-w-[600px] mx-auto">
+            <div className="py-12 md:py-20 bg-white">
+                <div className="max-w-[1440px] mx-auto px-4 md:px-8">
+                    <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-[22px] md:text-[28px] font-bold text-gray-900 mb-4">Endless Extras</h2>
+                        <p className="text-[14px] md:text-[16px] text-gray-600 max-w-[600px] mx-auto px-4">
                             Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, tasty Rewards and—yes, free coffee.
                         </p>
                     </div>
 
-                    <div className="flex flex-col md:flex-row gap-8 justify-center items-start text-center">
-                        <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-[112px] h-[112px] mx-auto mb-6">
+                    <div className="flex flex-col md:flex-row gap-10 md:gap-8 justify-center items-start text-center">
+                        <div className="flex-1 max-w-[350px] mx-auto px-4">
+                            <div className="w-[80px] h-[80px] md:w-[112px] md:h-[112px] mx-auto mb-6">
                                 <img src={funFreebies} alt="Fun freebies" className="w-full h-full object-contain" />
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Fun freebies</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed mb-4">
+                            <h3 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-3 md:mb-4">Fun freebies</h3>
+                            <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed mb-4">
                                 Not only can you earn free food, drinks, and more, look forward to a birthday treat on us.
                             </p>
                             <a href="#" className="text-[#008248] underline hover:no-underline font-semibold">Learn more</a>
                         </div>
 
-                        <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-[112px] h-[112px] mx-auto mb-6">
+                        <div className="flex-1 max-w-[350px] mx-auto px-4">
+                            <div className="w-[80px] h-[80px] md:w-[112px] md:h-[112px] mx-auto mb-6">
                                 <img src={orderAndPayAhead} alt="Order & pay ahead" className="w-full h-full object-contain" />
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Order & pay ahead</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed mb-4">
+                            <h3 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-3 md:mb-4">Order & pay ahead</h3>
+                            <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed mb-4">
                                 Master the art of ordering ahead with saved favorites and payment methods.
                             </p>
                             <a href="#" className="text-[#008248] underline hover:no-underline font-semibold">Learn more</a>
                         </div>
 
-                        <div className="flex-1 max-w-[350px] mx-auto">
-                            <div className="w-[112px] h-[112px] mx-auto mb-6">
+                        <div className="flex-1 max-w-[350px] mx-auto px-4">
+                            <div className="w-[80px] h-[80px] md:w-[112px] md:h-[112px] mx-auto mb-6">
                                 <img src={getToFreeFaster} alt="Get to free faster" className="w-full h-full object-contain" />
                             </div>
-                            <h3 className="text-[19px] font-bold text-gray-900 mb-4">Get to free faster</h3>
-                            <p className="text-[16px] text-gray-600 leading-relaxed mb-4">
+                            <h3 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-3 md:mb-4">Get to free faster</h3>
+                            <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed mb-4">
                                 Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
                             </p>
                             <a href="#" className="text-[#008248] underline hover:no-underline font-semibold">Learn more</a>
@@ -222,39 +221,39 @@ const Rewards = () => {
                 </div>
             </div>
 
-            <div className="bg-[#f3f1e7] py-20">
-                <div className="max-w-[1440px] mx-auto px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-[28px] font-bold text-gray-900 mb-4">Cash or card, you earn Stars</h2>
-                        <p className="text-[16px] text-gray-600 max-w-[700px] mx-auto">
+            <div className="bg-[#f3f1e7] py-12 md:py-20">
+                <div className="max-w-[1440px] mx-auto px-4 md:px-8">
+                    <div className="text-center mb-12 md:mb-16 px-4">
+                        <h2 className="text-[22px] md:text-[28px] font-bold text-gray-900 mb-4">Cash or card, you earn Stars</h2>
+                        <p className="text-[14px] md:text-[16px] text-gray-600 max-w-[700px] mx-auto">
                             No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-12">
+                    <div className="flex flex-col gap-12 md:gap-16">
                         {/* 1 Star per dollar */}
                         <div className="flex flex-col md:flex-row gap-8 items-start border-b border-gray-300 pb-12">
-                            <div className="w-full md:w-1/4">
-                                <h3 className="text-[24px] font-bold text-gray-900 mb-1">1★ per dollar</h3>
-                                <p className="text-[16px] text-gray-600">Pay as you go</p>
+                            <div className="w-full md:w-1/4 px-4 text-center md:text-left">
+                                <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900 mb-1">1★ per dollar</h3>
+                                <p className="text-[14px] md:text-[16px] text-gray-600">Pay as you go</p>
                             </div>
-                            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="flex gap-4">
-                                    <div className="w-[112px] h-[158px] shrink-0">
+                            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 px-4">
+                                <div className="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                                    <div className="w-[100px] md:w-[112px] h-auto shrink-0">
                                         <img src={oneA} alt="Scan and pay separately" className="w-full h-full object-contain" />
                                     </div>
                                     <div>
-                                        <h4 className="text-[19px] font-bold text-gray-900 mb-2">Scan and pay separately</h4>
-                                        <p className="text-[16px] text-gray-600">Use cash or credit/debit card at the register.</p>
+                                        <h4 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-2">Scan and pay separately</h4>
+                                        <p className="text-[14px] md:text-[16px] text-gray-600">Use cash or credit/debit card at the register.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="w-[112px] h-[158px] shrink-0">
+                                <div className="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                                    <div className="w-[100px] md:w-[112px] h-auto shrink-0">
                                         <img src={oneB} alt="Save payment in the app" className="w-full h-full object-contain" />
                                     </div>
                                     <div>
-                                        <h4 className="text-[19px] font-bold text-gray-900 mb-2">Save payment in the app</h4>
-                                        <p className="text-[16px] text-gray-600">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+                                        <h4 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-2">Save payment in the app</h4>
+                                        <p className="text-[14px] md:text-[16px] text-gray-600">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
                                     </div>
                                 </div>
                             </div>
@@ -262,27 +261,27 @@ const Rewards = () => {
 
                         {/* 2 Stars per dollar */}
                         <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="w-full md:w-1/4">
-                                <h3 className="text-[24px] font-bold text-gray-900 mb-1">2★ per dollar</h3>
-                                <p className="text-[16px] text-gray-600">Add funds in the app</p>
+                            <div className="w-full md:w-1/4 px-4 text-center md:text-left">
+                                <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900 mb-1">2★ per dollar</h3>
+                                <p className="text-[14px] md:text-[16px] text-gray-600">Add funds in the app</p>
                             </div>
-                            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="flex gap-4">
-                                    <div className="w-[112px] h-[158px] shrink-0">
+                            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 px-4">
+                                <div className="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                                    <div className="w-[100px] md:w-[112px] h-auto shrink-0">
                                         <img src={twoA} alt="Preload" className="w-full h-full object-contain" />
                                     </div>
                                     <div>
-                                        <h4 className="text-[19px] font-bold text-gray-900 mb-2">Preload</h4>
-                                        <p className="text-[16px] text-gray-600">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+                                        <h4 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-2">Preload</h4>
+                                        <p className="text-[14px] md:text-[16px] text-gray-600">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="w-[112px] h-[158px] shrink-0">
+                                <div className="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                                    <div className="w-[100px] md:w-[112px] h-auto shrink-0">
                                         <img src={twoB} alt="Register your gift card" className="w-full h-full object-contain" />
                                     </div>
                                     <div>
-                                        <h4 className="text-[19px] font-bold text-gray-900 mb-2">Register your gift card</h4>
-                                        <p className="text-[16px] text-gray-600">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+                                        <h4 className="text-[18px] md:text-[19px] font-bold text-gray-900 mb-2">Register your gift card</h4>
+                                        <p className="text-[14px] md:text-[16px] text-gray-600">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
                                     </div>
                                 </div>
                             </div>

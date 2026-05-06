@@ -6,36 +6,37 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="flex items-center justify-between px-4 md:px-8 py-4 md:py-6 bg-white shadow-sm font-sans sticky top-0 z-50">
-            <div className="flex items-center gap-6 md:gap-12">
+        <header className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-4 md:py-6 bg-white shadow-sm font-sans sticky top-0 z-50">
+            <div className="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12">
                 <Link to="/" className="shrink-0">
-                    <StarbucksLogo className="w-10 h-10 md:w-12 md:h-12" />
+                    <StarbucksLogo className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
                 </Link>
-                <nav className="hidden md:flex items-center gap-8">
-                    <Link to="/menu" className="text-gray-900 font-bold tracking-widest text-[13px] hover:text-green-700 transition-colors uppercase">
+                <nav className="hidden md:flex items-center gap-4 lg:gap-8">
+                    <Link to="/menu" className="text-gray-900 font-bold tracking-widest text-[12px] lg:text-[13px] hover:text-green-700 transition-colors uppercase whitespace-nowrap">
                         Menu
                     </Link>
-                    <Link to="/rewards" className="text-gray-900 font-bold tracking-widest text-[13px] hover:text-green-700 transition-colors uppercase">
+                    <Link to="/rewards" className="text-gray-900 font-bold tracking-widest text-[12px] lg:text-[13px] hover:text-green-700 transition-colors uppercase whitespace-nowrap">
                         Rewards
                     </Link>
-                    <Link to="/gift" className="text-gray-900 font-bold tracking-widest text-[13px] hover:text-green-700 transition-colors uppercase">
+                    <Link to="/gift" className="text-gray-900 font-bold tracking-widest text-[12px] lg:text-[13px] hover:text-green-700 transition-colors uppercase whitespace-nowrap">
                         Gift Cards
                     </Link>
                 </nav>
             </div>
 
-            <div className="flex items-center gap-4 md:gap-6">
-                <div className="hidden md:flex items-center gap-6">
-                    <a href="#" className="flex items-center gap-2 font-semibold text-sm hover:text-green-700 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-gray-900">
+            <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
+                <div className="hidden md:flex items-center gap-4 lg:gap-6">
+                    <a href="#" className="flex items-center gap-2 font-semibold text-xs lg:text-sm hover:text-green-700 transition-colors whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-gray-900">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                         </svg>
-                        Find a store
+                        <span className="hidden lg:inline">Find a store</span>
+                        <span className="lg:hidden">Stores</span>
                     </a>
-                    <Link to="/signin" className="rounded-full border border-gray-900 px-4 py-1.5 font-semibold text-sm hover:bg-gray-100 transition-colors">
+                    <Link to="/signin" className="rounded-full border border-gray-900 px-3 lg:px-4 py-1.5 font-semibold text-xs lg:text-sm hover:bg-gray-100 transition-colors whitespace-nowrap">
                         Sign in
                     </Link>
-                    <Link to="/account/create" className="rounded-full bg-black text-white border border-black px-4 py-1.5 font-semibold text-sm hover:bg-gray-800 transition-colors">
+                    <Link to="/account/create" className="rounded-full bg-black text-white border border-black px-3 lg:px-4 py-1.5 font-semibold text-xs lg:text-sm hover:bg-gray-800 transition-colors whitespace-nowrap">
                         Join now
                     </Link>
                 </div>

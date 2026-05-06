@@ -39,5 +39,12 @@
     "wantsEmail": true,
     "agreesToTerms": true,
     "createdAt": "2026-05-06T03:27:46.955Z"
+  },
+  {
+    "id": 6,
+    "username": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "keepSignedIn": true,
+    "createdAt": "2026-05-06T09:38:36.007Z"
   }
 ]

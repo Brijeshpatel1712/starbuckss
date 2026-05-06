@@ -66,11 +66,11 @@ const Join = () => {
         <div className="min-h-screen bg-white">
             <Header />
 
-            <div className="max-w-2xl mx-auto py-12 px-8 flex flex-col items-center">
-                <h1 className="text-3xl font-bold mb-8 text-center">Create an account</h1>
+            <div className="max-w-2xl mx-auto py-8 md:py-12 px-4 md:px-8 flex flex-col items-center">
+                <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">Create an account</h1>
 
-                <div className="text-center mb-10 w-full">
-                    <h2 className="text-[14px] font-bold tracking-[0.1em] mb-2 uppercase text-gray-600">
+                <div className="text-center mb-8 md:mb-10 w-full">
+                    <h2 className="text-[12px] md:text-[14px] font-bold tracking-[0.1em] mb-2 uppercase text-gray-600">
                         Starbucks® Rewards
                     </h2>
                     <p className="text-gray-600 text-sm max-w-sm mx-auto leading-relaxed">
@@ -78,8 +78,8 @@ const Join = () => {
                     </p>
                 </div>
 
-                <div className="w-full max-w-[500px] bg-white rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.1)] p-8 border border-gray-100">
-                    <p className="text-sm text-gray-500 mb-8">* indicates required field</p>
+                <div className="w-full max-w-[500px] bg-white rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.1)] p-6 md:p-8 border border-gray-100">
+                    <p className="text-sm text-gray-500 mb-6 md:mb-8">* indicates required field</p>
 
                     <form onSubmit={handleSubmit} className="space-y-8">
                         {/* Personal Information */}

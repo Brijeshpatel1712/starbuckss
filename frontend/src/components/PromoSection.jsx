@@ -4,12 +4,12 @@ const PromoSection = () => {
     return (
         <div className="flex flex-col-reverse md:flex-row items-stretch my-4 md:my-8">
             {/* Left side - Green Content */}
-            <div className="w-full md:w-1/2 bg-[#006241] text-white flex items-center justify-center px-6 md:px-12 py-12 md:py-16">
-                <div className="max-w-md text-center">
-                    <h2 className="text-3xl md:text-5xl font-semibold mb-6 md:mb-8 leading-tight">
+            <div className="w-full md:w-1/2 bg-[#006241] text-white flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
+                <div className="max-w-md lg:max-w-lg text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8 leading-tight">
                         A little bite, a lot of good
                     </h2>
-                    <p className="text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
                         For every purchase of Crispy Grilled Cheese on Sourdough at participating locations,
                         we'll donate the value of two school meals** to support programs that feed kids.
                         Together we'll build a brighter future.

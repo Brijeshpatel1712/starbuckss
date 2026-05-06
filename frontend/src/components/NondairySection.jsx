@@ -13,12 +13,12 @@ const NondairySection = () => {
             </div>
 
             {/* Right side - Red Content */}
-            <div className="w-full md:w-1/2 bg-[#b8405e] text-white flex items-center justify-center px-12 py-16">
-                <div className="max-w-md text-center">
-                    <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+            <div className="w-full md:w-1/2 bg-[#b8405e] text-white flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
+                <div className="max-w-md lg:max-w-lg text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8">
                         Make it nondairy. No extra charge.
                     </h2>
-                    <p className="text-lg mb-8 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed">
                         Enjoy your favorite holiday beverage or other drink of your choice with nondairy milk.
                         Choose from oat, almond, coconut or soy—for no additional charge.
                     </p>

@@ -16,10 +16,10 @@ import sunseraBlendImg from '../assets/Whole Bean/Starbucks® Sunsera Blend.jpg'
 
 const WholeBeanItem = ({ image, title }) => (
     <div className="flex flex-col items-center text-center group cursor-pointer">
-        <div className="w-20 h-20 rounded-full bg-[#1e3932] flex items-center justify-center overflow-hidden mb-4 transition-transform group-hover:scale-105">
-            <img src={image} alt={title} className="w-full h-full object-contain p-2" />
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#1e3932] flex items-center justify-center overflow-hidden mb-3 sm:mb-4 transition-transform group-hover:scale-105">
+            <img src={image} alt={title} className="w-full h-full object-contain p-1.5 sm:p-2" />
         </div>
-        <h3 className="text-lg font-medium text-gray-900 leading-tight max-w-[200px]">{title}</h3>
+        <h3 className="text-sm sm:text-lg font-medium text-gray-900 leading-tight max-w-[120px] sm:max-w-[200px]">{title}</h3>
     </div>
 );
 
@@ -52,20 +52,20 @@ const WholeBean = () => {
         <div className="min-h-screen bg-white">
             <Header />
 
-            <div className="container mx-auto px-8 py-8">
+            <div className="container mx-auto px-4 sm:px-8 py-8">
                 {/* Breadcrumb */}
-                <div className="text-sm text-gray-500 mb-8 font-medium">
+                <div className="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8 font-medium">
                     <Link to="/menu" className="hover:underline">Menu</Link>
                     <span className="mx-2">/</span>
                     <span className="text-gray-900 font-bold">Whole Bean</span>
                 </div>
 
-                <h1 className="text-3xl font-bold text-gray-900 mb-12">Whole Bean</h1>
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">Whole Bean</h1>
 
                 {/* Section: Blonde Roast */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Blonde Roast</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Blonde Roast</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {blondeRoast.map((item, index) => (
                             <WholeBeanItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -73,9 +73,9 @@ const WholeBean = () => {
                 </div>
 
                 {/* Section: Medium Roast */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Medium Roast</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Medium Roast</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {mediumRoast.map((item, index) => (
                             <WholeBeanItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -83,9 +83,9 @@ const WholeBean = () => {
                 </div>
 
                 {/* Section: Dark Roast */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Dark Roast</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Dark Roast</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {darkRoast.map((item, index) => (
                             <WholeBeanItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -93,9 +93,9 @@ const WholeBean = () => {
                 </div>
 
                 {/* Section: Decaf Coffees */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Decaf Coffees</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Decaf Coffees</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {decafCoffees.map((item, index) => (
                             <WholeBeanItem key={index} title={item.title} image={item.image} />
                         ))}

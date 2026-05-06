@@ -22,10 +22,10 @@ import strawberryYogurtImg from '../assets/Breakfast/Ellenos Strawberry Shortcak
 
 const BreakfastItem = ({ image, title }) => (
     <div className="flex flex-col items-center text-center group cursor-pointer">
-        <div className="w-32 h-32 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden mb-4 transition-transform group-hover:scale-105">
+        <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden mb-3 sm:mb-4 transition-transform group-hover:scale-105">
             <img src={image} alt={title} className="w-full h-full object-cover" />
         </div>
-        <h3 className="text-lg font-medium text-gray-900 leading-tight max-w-[200px]">{title}</h3>
+        <h3 className="text-sm sm:text-lg font-medium text-gray-900 leading-tight max-w-[120px] sm:max-w-[200px]">{title}</h3>
     </div>
 );
 
@@ -54,20 +54,20 @@ const Breakfast = () => {
         <div className="min-h-screen bg-white">
             <Header />
 
-            <div className="container mx-auto px-8 py-8">
+            <div className="container mx-auto px-4 sm:px-8 py-8">
                 {/* Breadcrumb */}
-                <div className="text-sm text-gray-500 mb-8 font-medium">
+                <div className="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8 font-medium">
                     <Link to="/menu" className="hover:underline">Menu</Link>
                     <span className="mx-2">/</span>
                     <span className="text-gray-900 font-bold">Breakfast</span>
                 </div>
 
-                <h1 className="text-3xl font-bold text-gray-900 mb-12">Breakfast</h1>
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">Breakfast</h1>
 
                 {/* Section 1: Breakfast Sandwiches */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Breakfast Sandwiches</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Breakfast Sandwiches</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {breakfastSandwiches.map((item, index) => (
                             <BreakfastItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -75,9 +75,9 @@ const Breakfast = () => {
                 </div>
 
                 {/* Section 2: Breakfast Wraps */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Breakfast Wraps</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Breakfast Wraps</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {breakfastWraps.map((item, index) => (
                             <BreakfastItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -85,9 +85,9 @@ const Breakfast = () => {
                 </div>
 
                 {/* Section 3: Egg Bites & Bakes */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">Egg Bites & Bakes</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">Egg Bites & Bakes</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {eggBitesAndBakes.map((item, index) => (
                             <BreakfastItem key={index} title={item.title} image={item.image} />
                         ))}
@@ -95,9 +95,9 @@ const Breakfast = () => {
                 </div>
 
                 {/* Section 4: More Breakfast Classics */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b pb-2">More Breakfast Classics</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+                <div className="mb-12 sm:mb-16">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 border-b pb-2">More Breakfast Classics</h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12">
                         {breakfastClassics.map((item, index) => (
                             <BreakfastItem key={index} title={item.title} image={item.image} />
                         ))}

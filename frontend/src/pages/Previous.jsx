@@ -11,30 +11,30 @@ const Previous = () => {
             <Header />
 
             {/* Sub Navigation */}
-            <div className="border-b border-gray-200 bg-white sticky top-[88px] z-40">
-                <div className="container mx-auto px-8">
-                    <div className="flex gap-8">
+            <div className="border-b border-gray-200 bg-white sticky top-[72px] md:top-[88px] z-40">
+                <div className="container mx-auto px-4 md:px-8">
+                    <div className="flex gap-4 md:gap-8 overflow-x-auto scrollbar-hide">
                         <Link
                             to="/menu"
-                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 transition-colors"
+                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 whitespace-nowrap transition-colors"
                         >
                             Menu
                         </Link>
                         <Link
                             to="/featured"
-                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 transition-colors"
+                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 whitespace-nowrap transition-colors"
                         >
                             Featured
                         </Link>
                         <Link
                             to="/menu/previous"
-                            className="py-4 px-2 font-semibold text-sm border-b-2 border-green-700 text-gray-900 transition-colors"
+                            className="py-4 px-2 font-semibold text-sm border-b-2 border-green-700 text-gray-900 whitespace-nowrap transition-colors"
                         >
                             Previous
                         </Link>
                         <Link
                             to="/menu/favorites"
-                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 transition-colors"
+                            className="py-4 px-2 font-semibold text-sm border-b-2 border-transparent text-gray-600 hover:text-gray-900 whitespace-nowrap transition-colors"
                         >
                             Favorites
                         </Link>

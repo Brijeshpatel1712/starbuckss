@@ -4,12 +4,12 @@ const RefillsSection = () => {
     return (
         <div className="flex flex-col md:flex-row items-stretch my-8">
             {/* Left side - Green Content */}
-            <div className="w-full md:w-1/2 bg-[#1e7e5a] text-white flex items-center justify-center px-12 py-16">
-                <div className="max-w-md text-center">
-                    <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+            <div className="w-full md:w-1/2 bg-[#1e7e5a] text-white flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
+                <div className="max-w-md lg:max-w-lg text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8">
                         Free refills while you stay
                     </h2>
-                    <p className="text-lg mb-8 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed">
                         Stay in our café to enjoy your favorite beverage and refills of hot and iced brewed
                         coffee or tea are on us***—including Starbucks® Christmas Blend and Starbucks®
                         Christmas Blonde Roast.

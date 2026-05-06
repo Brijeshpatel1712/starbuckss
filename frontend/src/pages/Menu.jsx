@@ -26,12 +26,12 @@ const Menu = () => {
             <Header />
 
             {/* Sub Navigation */}
-            <div className="border-b border-gray-200 bg-white sticky top-[88px] z-40">
-                <div className="container mx-auto px-8">
-                    <div className="flex gap-8">
+            <div className="border-b border-gray-200 bg-white sticky top-[72px] md:top-[88px] z-40">
+                <div className="container mx-auto px-4 md:px-8">
+                    <div className="flex gap-4 md:gap-8 overflow-x-auto scrollbar-hide">
                         <button
                             onClick={() => setActiveTab('menu')}
-                            className={`py-4 px-2 font-semibold text-sm border-b-2 transition-colors ${activeTab === 'menu'
+                            className={`py-4 px-2 font-semibold text-sm border-b-2 whitespace-nowrap transition-colors ${activeTab === 'menu'
                                 ? 'border-green-700 text-gray-900'
                                 : 'border-transparent text-gray-600 hover:text-gray-900'
                                 }`}
@@ -40,7 +40,7 @@ const Menu = () => {
                         </button>
                         <Link
                             to="/featured"
-                            className={`py-4 px-2 font-semibold text-sm border-b-2 transition-colors ${activeTab === 'featured'
+                            className={`py-4 px-2 font-semibold text-sm border-b-2 whitespace-nowrap transition-colors ${activeTab === 'featured'
                                 ? 'border-green-700 text-gray-900'
                                 : 'border-transparent text-gray-600 hover:text-gray-900'
                                 }`}
@@ -49,7 +49,7 @@ const Menu = () => {
                         </Link>
                         <Link
                             to="/menu/previous"
-                            className={`py-4 px-2 font-semibold text-sm border-b-2 transition-colors ${activeTab === 'previous'
+                            className={`py-4 px-2 font-semibold text-sm border-b-2 whitespace-nowrap transition-colors ${activeTab === 'previous'
                                 ? 'border-green-700 text-gray-900'
                                 : 'border-transparent text-gray-600 hover:text-gray-900'
                                 }`}
@@ -58,7 +58,7 @@ const Menu = () => {
                         </Link>
                         <Link
                             to="/menu/favorites"
-                            className={`py-4 px-2 font-semibold text-sm border-b-2 transition-colors ${activeTab === 'favorites'
+                            className={`py-4 px-2 font-semibold text-sm border-b-2 whitespace-nowrap transition-colors ${activeTab === 'favorites'
                                 ? 'border-green-700 text-gray-900'
                                 : 'border-transparent text-gray-600 hover:text-gray-900'
                                 }`}
@@ -70,10 +70,10 @@ const Menu = () => {
             </div>
 
             {/* Main Content */}
-            <div className="container mx-auto px-8 py-12">
-                <div className="flex gap-12">
-                    {/* Sidebar */}
-                    <aside className="w-64 flex-shrink-0">
+            <div className="container mx-auto px-4 md:px-8 py-8 md:py-12">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+                    {/* Sidebar - Hidden on mobile */}
+                    <aside className="hidden md:block w-64 flex-shrink-0">
                         {/* Drinks Section */}
                         <h2 className="text-xl font-semibold mb-6">Drinks</h2>
                         <ul className="space-y-3 mb-8">
@@ -129,14 +129,14 @@ const Menu = () => {
 
                     {/* Main Content Area */}
                     <main className="flex-1">
-                        <h1 className="text-3xl font-semibold mb-8">Drinks</h1>
+                        <h1 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8">Drinks</h1>
 
                         {/* Drink Categories Grid */}
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                             {/* Hot Coffee */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
                                 <Link to="/menu/hot-coffee" className="contents">
-                                    <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                    <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                         <img
                                             src={hotCoffeeImg}
                                             alt="Hot Coffee"
@@ -149,7 +149,7 @@ const Menu = () => {
 
                             {/* Cold Coffee */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-                                <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                     <img
                                         src={coldCoffeeImg}
                                         alt="Cold Coffee"
@@ -161,13 +161,13 @@ const Menu = () => {
                         </div>
 
                         {/* Food Section */}
-                        <h1 className="text-3xl font-semibold mb-8 mt-16">Food</h1>
+                        <h1 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 mt-12 md:mt-16">Food</h1>
 
                         {/* Food Categories Grid */}
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                             {/* Breakfast */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-                                <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                     <img
                                         src={breakfastImg}
                                         alt="Breakfast"
@@ -179,7 +179,7 @@ const Menu = () => {
 
                             {/* Bakery */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-                                <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                     <img
                                         src={bakeryImg}
                                         alt="Bakery"
@@ -191,13 +191,13 @@ const Menu = () => {
                         </div>
 
                         {/* At Home Coffee Section */}
-                        <h1 className="text-3xl font-semibold mb-8 mt-16">At Home Coffee</h1>
+                        <h1 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 mt-12 md:mt-16">At Home Coffee</h1>
 
                         {/* At Home Coffee Categories Grid */}
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                             {/* Whole Bean */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-                                <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                     <img
                                         src={wholeBeanImg}
                                         alt="Whole Bean"
@@ -209,7 +209,7 @@ const Menu = () => {
 
                             {/* Starbucks VIA Instant */}
                             <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-                                <div className="w-28 h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#00704A] flex items-center justify-center overflow-hidden flex-shrink-0">
                                     <img
                                         src={viaInstantImg}
                                         alt="Starbucks VIA Instant"

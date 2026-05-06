@@ -2,9 +2,9 @@ import React from 'react';
 
 const FooterNav = () => {
     return (
-        <div className="bg-white border-t border-gray-200 py-12 px-8">
-            <div className="container mx-auto max-w-6xl">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="bg-white border-t border-gray-200 py-12 px-4 sm:px-6 md:px-8 lg:px-12">
+            <div className="container mx-auto max-w-7xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 lg:gap-12">
                     {/* About Us */}
                     <div>
                         <h3 className="font-semibold text-gray-900 mb-4">About Us</h3>

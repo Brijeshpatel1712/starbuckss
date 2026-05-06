@@ -13,12 +13,12 @@ const FreeCupSection = () => {
             </div>
 
             {/* Right side - Green Content */}
-            <div className="w-full md:w-1/2 bg-[#006241] text-white flex items-center justify-center px-12 py-16">
-                <div className="max-w-md text-center">
-                    <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+            <div className="w-full md:w-1/2 bg-[#006241] text-white flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
+                <div className="max-w-md lg:max-w-lg text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8">
                         Your free cup of cheer
                     </h2>
-                    <p className="text-lg mb-8 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed">
                         Celebrate the season with a <strong>free handcrafted drink</strong> with purchase.
                         It's our gift to you during your first week as a Starbucks® Rewards member.****
                     </p>

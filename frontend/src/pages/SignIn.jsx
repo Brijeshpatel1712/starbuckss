@@ -65,14 +65,14 @@ const SignIn = () => {
     return (
         <div className="min-h-screen bg-white">
             {/* Header */}
-            <header className="border-b border-gray-200 py-6 px-8 flex items-center gap-4">
-                <Link to="/" className="text-gray-600 hover:text-gray-900">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <header className="border-b border-gray-200 py-4 md:py-6 px-4 md:px-8 flex items-center gap-4">
+                <Link to="/" className="text-gray-600 hover:text-gray-900 p-2">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                 </Link>
                 <Link to="/">
-                    <StarbucksLogo className="w-12 h-12" />
+                    <StarbucksLogo className="w-10 h-10 md:w-12 md:h-12" />
                 </Link>
             </header>
 
@@ -170,15 +170,15 @@ const SignIn = () => {
                     </div>
 
                     {/* Join Starbucks Rewards Section */}
-                    <div className="mt-12 text-center">
-                        <h2 className="text-xl font-semibold mb-4">
+                    <div className="mt-8 md:mt-12 text-center">
+                        <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
                             JOIN STARBUCKS® REWARDS
                         </h2>
-                        <p className="text-sm text-gray-700 mb-6 max-w-md mx-auto">
+                        <p className="text-sm text-gray-700 mb-6 max-w-sm md:max-w-md mx-auto leading-relaxed">
                             As a member, start earning free food and drinks, unlock our best offers and celebrate your birthday with a treat from us. Best of all, it's free to join.
                         </p>
                         <Link to="/account/create">
-                            <button className="rounded-full border-2 border-green-700 text-green-700 px-6 py-2.5 font-semibold text-base hover:bg-green-50 transition-colors">
+                            <button className="rounded-full border-2 border-green-700 text-green-700 px-6 py-2 md:py-2.5 font-semibold text-base hover:bg-green-50 transition-colors">
                                 Join now
                             </button>
                         </Link>
