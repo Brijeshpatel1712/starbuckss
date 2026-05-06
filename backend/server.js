@@ -34,6 +34,16 @@ const writeUsers = (users) => {
 app.use(cors());
 app.use(express.json());
 
+// Root endpoint for testing
+app.get('/', (req, res) => {
+    res.send('Starbucks Backend is Running!');
+});
+
+// Health check
+app.get('/api/health', (req, res) => {
+    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
 // Sign in endpoint
 app.post('/api/signin', (req, res) => {
     const { username, password, keepSignedIn } = req.body;
