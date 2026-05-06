@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-starbucks-green: #006241;
+  --color-starbucks-dark: #1e3932;
+  --color-starbucks-warm-red: #d50032;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

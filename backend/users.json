@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "username": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "keepSignedIn": true,
+    "createdAt": "2026-05-06T03:18:37.365Z"
+  },
+  {
+    "id": 2,
+    "username": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "keepSignedIn": true,
+    "createdAt": "2026-05-06T03:19:51.088Z"
+  },
+  {
+    "id": 3,
+    "firstName": "Sangani",
+    "lastName": "Brijesh",
+    "email": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "wantsEmail": true,
+    "agreesToTerms": true,
+    "createdAt": "2026-05-06T03:22:28.021Z"
+  },
+  {
+    "id": 4,
+    "username": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "keepSignedIn": false,
+    "createdAt": "2026-05-06T03:27:23.173Z"
+  },
+  {
+    "id": 5,
+    "firstName": "Sangani",
+    "lastName": "Brijesh",
+    "email": "brijeshsangani088@gmail.com",
+    "password": "Brijesh@123",
+    "wantsEmail": true,
+    "agreesToTerms": true,
+    "createdAt": "2026-05-06T03:27:46.955Z"
+  }
+]
